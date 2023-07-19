@@ -1,0 +1,45 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* ORGANIZZAZIONE CSS: dall alto in basso metti sempre tag dal più generico al più specifico in basso */
+
+/* FONT di SISTEMA: di solito il FONT si da al body {} separando i font da virgole dico: arial, sans-serif = dammi arial, SE non lo trovi su quel pc dammi sans-serif */
+
+/* GOOGLE FONTS: vai su font google - selziona sempre il regular 400 e il bold 700 o 800 - copia il link fornito e incollalo nella head subito prima del linkCSS - poi metti font-family (ci sono comunque istruzioni su font google su cosa mettere) su style.css con il nome di quel font*/
+
+/* SELETTORI ADV: si possono DARE PIU CLASSI separandole da uno spazio es: class="classe1 classe2" */
+
+/* SELETTORI ADV: scrivere ".box p {}" - seleziona i p contenuti in box*/
+
+/* unità di misura font - font size: 3rem sarà 3 volte la grandezza standard del font . font-size:3em sarà 3 volte la grandezza del font del padre */
+
+/* SELETTORI ADV:scrivere div, p, section {} la regola si applica a tutti i div, a tutti i p e a tutti i section */
+
+/* SELETTORI ADV: section.container {} (senza spazi) - seleziono tutti i section che sono anche container */
+
+/* 
+display: none  nasconde da qualsiasi cosa (rende invisibile)
+
+CENTRARE ORIZZONTALMENTE un container (anche tutto body per dire)
+margin: 0 auto
+width: 50% (e poi la regoli se vuoi contenuto più largo
+
+
+border-radius : per fare gli angoli arrotondati
+border-radius: 50%  rende rotondo un elemento
+
+display: block
+display: inline-block
+
+comando da dare all'immagine per centrarla rispetto a un testo laterale o anche a un TESTO MAGARI MOLTO GRANDE:
+vertical-align: middle;
+
+CENTRARE VERTICALMENTE IL TESTO IN UN CONTENITORE:
+line-height: altezza del contenitore
+(e poi text-align: center per centrarlo ORIZZONTALMENTE)
+
+{ content: ... } aggiunge del contenuto di testo */
