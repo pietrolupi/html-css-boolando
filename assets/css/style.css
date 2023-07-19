@@ -4,42 +4,157 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-/* ORGANIZZAZIONE CSS: dall alto in basso metti sempre tag dal più generico al più specifico in basso */
+.header-container,
+.main {
 
-/* FONT di SISTEMA: di solito il FONT si da al body {} separando i font da virgole dico: arial, sans-serif = dammi arial, SE non lo trovi su quel pc dammi sans-serif */
-
-/* GOOGLE FONTS: vai su font google - selziona sempre il regular 400 e il bold 700 o 800 - copia il link fornito e incollalo nella head subito prima del linkCSS - poi metti font-family (ci sono comunque istruzioni su font google su cosa mettere) su style.css con il nome di quel font*/
-
-/* SELETTORI ADV: si possono DARE PIU CLASSI separandole da uno spazio es: class="classe1 classe2" */
-
-/* SELETTORI ADV: scrivere ".box p {}" - seleziona i p contenuti in box*/
-
-/* unità di misura font - font size: 3rem sarà 3 volte la grandezza standard del font . font-size:3em sarà 3 volte la grandezza del font del padre */
-
-/* SELETTORI ADV:scrivere div, p, section {} la regola si applica a tutti i div, a tutti i p e a tutti i section */
-
-/* SELETTORI ADV: section.container {} (senza spazi) - seleziono tutti i section che sono anche container */
-
-/* 
-display: none  nasconde da qualsiasi cosa (rende invisibile)
-
-CENTRARE ORIZZONTALMENTE un container (anche tutto body per dire)
-margin: 0 auto
-width: 50% (e poi la regoli se vuoi contenuto più largo
+}
+/* DEBUG */
 
 
-border-radius : per fare gli angoli arrotondati
-border-radius: 50%  rende rotondo un elemento
 
-display: block
-display: inline-block
 
-comando da dare all'immagine per centrarla rispetto a un testo laterale o anche a un TESTO MAGARI MOLTO GRANDE:
-vertical-align: middle;
 
-CENTRARE VERTICALMENTE IL TESTO IN UN CONTENITORE:
-line-height: altezza del contenitore
-(e poi text-align: center per centrarlo ORIZZONTALMENTE)
+/* /DEBUG */
 
-{ content: ... } aggiunge del contenuto di testo */
+
+/* HEADER */
+
+header {
+    display: flex;
+    height: 80px;
+    background-color: #ff6900;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container {
+  width: 90%;
+  max-width: 1600px;
+  display: flex;
+}
+
+.header-menu,
+.header-icons {
+  width: 25%;
+  display: flex;
+}
+
+.header-logo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.header-logo img {
+  height: 35px;
+}
+
+.header-menu ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.header-menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.header-icons {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-icons a {
+  padding-left: 10px;
+  color: white;
+  font-size: 1.1rem;
+}
+
+/* MAIN */
+
+
+main {
+  margin: 65px auto;
+  width: 90%;
+  max-width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-container {
+  width: 32.5%;
+  min-width: 300px ;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.img-card {
+  position: relative;
+}
+
+.img-card img {
+  width: 100%;
+}
+
+.discount {
+  position: absolute;
+  left: 0px;
+  bottom: 40px;
+}
+.ecological {
+  position: absolute;
+  left: 62px;
+  bottom: 40px;
+}
+
+.heart {
+  position: absolute;
+  right: 0px;
+  top: 15px;
+}
+
+
+
+
+
+
+/* styles */
+
+.price {
+  font-weight: bold;
+  color: red;
+}
+
+.ex-price {
+  text-decoration: line-through;
+}
+
+.discount {
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+}
+
+.ecological {
+  padding: 5px 10px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+
+.heart {
+  background-color: white;
+  padding: 5px 15px;
+  font-size: 2.5rem;
+}
