@@ -126,9 +126,21 @@ main {
   border-radius: 50%;
 }
 
+/* FOOTER */
 
+footer {
+  display: flex;
+  height: 110px;
+  background-color: #1a1a1a;
+  align-items: center;
+  justify-content: space-between;
+}
 
-
+.footer-container {
+width: 90%;
+max-width: 1600px;
+display: flex;
+}
 
 
 /* styles */
@@ -175,3 +187,4 @@ main {
 .img-card:hover .img-main {
   display: none;
 }
+
